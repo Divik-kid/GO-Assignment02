@@ -60,6 +60,9 @@ func server(ch chan packet) {
 			exAck = exAck + 100
 			fmt.Print(syn.data + " number: ")
 			fmt.Println(syn.sequence)
+
+			//lets say we need 15 packages, then we could insert the packages int an array of packages according to their sequence/package number
+			//possibly even have the server request missing packages
 		}
 	}
 }
